@@ -15,10 +15,7 @@ from datetime import datetime
 # ✅ AZURE COSMOS DB (Mongo API)
 ################################################
 
-MONGO_URI = (
-    "mongodb+srv://mongodb:Shanu1234@sravanitest.global.mongocluster.cosmos.azure.com/"
-    "?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
-)
+MONGO_URI = "mongodb+srv://mongodb:Shanu1234@sravanitest.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000"
 
 DB_NAME = "weatherdb"
 COLLECTION_NAME = "Weather Data"
@@ -175,4 +172,5 @@ st.plotly_chart(fig3, use_container_width=True)
 ################################################
 
 with st.expander("Preview data"):
+
     st.dataframe(filtered.head(200), use_container_width=True)
